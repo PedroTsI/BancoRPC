@@ -32,6 +32,10 @@ public class AppClienteBanco {
                     //chamada ao método remoto, como se fosse executar localmente
                     System.out.println(banco.quantidadeContas());
                 }
+                case 3: {
+                    banco.criarConta();
+                    break;
+                }
             }
             menu();
             opcao = entrada.nextInt();
@@ -42,6 +46,7 @@ public class AppClienteBanco {
         System.out.println("\n=== BANCO RMI (ou FMI?!) ===");
         System.out.println("1 - Saldo da conta");
         System.out.println("2 - Quantidade de contas");
+        System.out.println("3 - Criar conta");
         System.out.println("9 - Sair");
     }
 
